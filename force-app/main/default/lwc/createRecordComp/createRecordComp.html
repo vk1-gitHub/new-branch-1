@@ -1,0 +1,75 @@
+<template>
+        <lightning-card class="slds-p-around_medium"  title="Create Account">
+            <lightning-record-edit-form record-id={accountid} object-api-name={accountObject} onsuccess={handleAccountCreated}>
+                <lightning-messages></lightning-messages>
+                
+                <div class="slds-grid slds-wrap slds-gutters">
+                    <div class="slds-col slds-size_1-of-2">
+                        <span><lightning-input-field field-name={nameField}></lightning-input-field></span>
+                    </div> 
+                    <div class="slds-col slds-size_1-of-2">
+                        <span><lightning-input-field field-name={typeField}></lightning-input-field> </span>
+                    </div>
+                    <div class="slds-col slds-size_1-of-2">
+                        <span><lightning-input-field field-name={PhoneField}></lightning-input-field></span>
+                    </div>
+                    <div class="slds-col slds-size_1-of-2">
+                        <span><lightning-input-field field-name={websiteField}></lightning-input-field></span>
+                    </div>
+                    <div class="slds-col slds-size_1-of-2">
+                        <span><lightning-input-field field-name={IndustryField}></lightning-input-field></span>
+                    </div>
+                    <div class="slds-col slds-size_1-of-2">   
+                        <span><lightning-input-field field-name={RatingField}></lightning-input-field></span>
+                    </div>
+                <div class="slds-p-top_medium slds-col slds-size_1-of-2">
+                        <lightning-button class="slds-p-top_large" type="submit" variant="brand" label="Create Account"></lightning-button>
+                </div>
+            </div>
+            </lightning-record-edit-form>
+        </lightning-card>
+        <template if:true={renderYNButton}>
+                <lightning-card class="slds-p-around_medium"  title="Do You Want Create Contact For Created Account ?">
+                    <div class="slds-grid slds-wrap slds-gutters">
+                        <div class="slds-p-top_medium slds-col slds-size_1-of-2">
+                               <lightning-button variant="brand" label="Yes" onclick={handleActionYes}></lightning-button>
+                        </div>
+                        <div class="slds-p-top_medium slds-col slds-size_1-of-2">
+                             <lightning-button variant="brand" label="NO" onclick={handleActionNo}></lightning-button>
+                        </div>
+                    </div>
+                </lightning-card>
+        </template>
+        <template if:true={isCreateContact}>
+                <lightning-card class="slds-p-around_medium"  title="Create Contact">
+                        <lightning-record-edit-form object-api-name={contactObjName} onsuccess={handleContactCreated}>
+                            <lightning-messages></lightning-messages>
+                            
+                            <div class="slds-grid slds-wrap slds-gutters">
+                                <div class="slds-col slds-size_1-of-2">
+                                    <span><lightning-input-field field-name={firstName}></lightning-input-field></span>
+                                </div> 
+                                <div class="slds-col slds-size_1-of-2">
+                                    <span><lightning-input-field field-name={lastName}></lightning-input-field> </span>
+                                </div>
+                                <div class="slds-col slds-size_1-of-2">
+                                    <span><lightning-input-field field-name={emailField}></lightning-input-field></span>
+                                </div>
+                                <div class="slds-col slds-size_1-of-2">
+                                    <span><lightning-input-field field-name={contactPhone}></lightning-input-field></span>
+                                </div>
+                                <div class="slds-col slds-size_1-of-2">
+                                    <span><lightning-input-field field-name={parent} value={accountid}></lightning-input-field></span>
+                                </div>
+                                <div class="slds-col slds-size_1-of-2">   
+                                    <span><lightning-input-field field-name={dobField}></lightning-input-field></span>
+                                </div>
+                                <div class="slds-p-top_medium slds-col slds-size_1-of-2">
+                                    <lightning-button class="slds-p-top_large" type="submit" variant="brand" label="Create Contact"></lightning-button>
+                                </div>
+                    </div>
+                        </lightning-record-edit-form>
+                    </lightning-card>
+        </template>
+        
+    </template>

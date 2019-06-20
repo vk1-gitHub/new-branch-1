@@ -1,0 +1,24 @@
+<template>
+    <lightning-card title="Nevigation In Lightning Web component" class="slds-p-around_medium">
+        <lightning-combobox
+                            name="object"
+                            label="Select Object To Nevigate"
+                            value=""
+                            placeholder="Select Object"
+                            options={obj}
+                            onchange={handleChangeObject}
+                            required>
+        </lightning-combobox><br/>
+        <lightning-combobox
+                            name="detail"
+                            label="Select Destination To Nevigate"
+                            value=""
+                            placeholder="Select Destination"
+                            options={options}
+                            onchange={handleChangeDetail}
+                            required>
+        </lightning-combobox><br/>
+        <lightning-button variant="success" label="Nevigate To Page" title="Success" onclick={navigateToObjectHome} class="slds-m-left_x-small"></lightning-button><br/><br/>
+        <lightning-button variant="brand" label="Nevigate To Component" title="Success" onclick={navigateToComponent} class="slds-m-left_x-small"></lightning-button>    
+    </lightning-card>
+    </template>

@@ -1,0 +1,13 @@
+<template>
+        <div class="div2" id="div2" ondrop={drop} ondragover={allowDrop}>
+            <template if:true={secondList}>
+                <template for:each={secondList} for:item='item'>
+                        <p key={item.Id}>
+                            <lightning-input key={item.Id} type="text" value={item.value} label={item.value} draggable="true" ondragstart={dragAttr}></lightning-input></p>
+                            <!--<lightning-formatted-text key={item.Id} value={item.value} draggable="true" ondragstart={dragAttr}></lightning-formatted-text>-->
+                        <!--<p key={item.id}>{item.value}</p>-->
+                    </template>
+            </template>
+        </div>
+        <c-drag-cmp1 onmydrag={handleDrag} ondragcompleteinfirst={removeAttrInSecond}></c-drag-cmp1>
+</template>

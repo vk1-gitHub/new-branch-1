@@ -1,0 +1,149 @@
+{
+    "compilerOptions": {
+        "experimentalDecorators": true,
+        "baseUrl": ".",
+        "paths": {
+            "c/showBikes": [
+                "showBikes/showBikes.js"
+            ],
+            "c/webComponent3": [
+                "webComponent3/webComponent3.js"
+            ],
+            "c/searchComponent": [
+                "searchComponent/searchComponent.js"
+            ],
+            "c/testnevigate": [
+                "testnevigate/testnevigate.js"
+            ],
+            "c/createRecordComp": [
+                "createRecordComp/createRecordComp.js"
+            ],
+            "c/thirdLWC": [
+                "thirdLWC/thirdLWC.js"
+            ],
+            "c/objectListComp": [
+                "objectListComp/objectListComp.js"
+            ],
+            "c/secondLWC": [
+                "secondLWC/secondLWC.js"
+            ],
+            "c/productCard": [
+                "productCard/productCard.js"
+            ],
+            "c/testLwc": [
+                "testLwc/testLwc.js"
+            ],
+            "c/placeholder": [
+                "placeholder/placeholder.js"
+            ],
+            "c/orderBuilder": [
+                "orderBuilder/orderBuilder.js"
+            ],
+            "c/myLwcDnd": [
+                "myLwcDnd/myLwcDnd.js"
+            ],
+            "c/myDndItem": [
+                "myDndItem/myDndItem.js"
+            ],
+            "c/fisrtLWC": [
+                "fisrtLWC/fisrtLWC.js"
+            ],
+            "c/ldsUtils": [
+                "ldsUtils/ldsUtils.js"
+            ],
+            "c/firstComp": [
+                "firstComp/firstComp.js"
+            ],
+            "c/webComponent2": [
+                "webComponent2/webComponent2.js"
+            ],
+            "c/helloWorld": [
+                "helloWorld/helloWorld.js"
+            ],
+            "c/myDndList": [
+                "myDndList/myDndList.js"
+            ],
+            "c/inlineMessage": [
+                "inlineMessage/inlineMessage.js"
+            ],
+            "c/bikeCard": [
+                "bikeCard/bikeCard.js"
+            ],
+            "c/webComponent1": [
+                "webComponent1/webComponent1.js"
+            ],
+            "c/data": [
+                "data/data.js"
+            ],
+            "c/accountMap": [
+                "accountMap/accountMap.js"
+            ],
+            "c/secondComp": [
+                "secondComp/secondComp.js"
+            ],
+            "c/myComp1": [
+                "myComp1/myComp1.js"
+            ],
+            "c/childLWC": [
+                "childLWC/childLWC.js"
+            ],
+            "c/myComp2": [
+                "myComp2/myComp2.js"
+            ],
+            "c/paginator": [
+                "paginator/paginator.js"
+            ],
+            "c/tabLwcComp": [
+                "tabLwcComp/tabLwcComp.js"
+            ],
+            "c/notesAndAttachmentList": [
+                "notesAndAttachmentList/notesAndAttachmentList.js"
+            ],
+            "c/mappingPage": [
+                "mappingPage/mappingPage.js"
+            ],
+            "c/orderItemTile": [
+                "orderItemTile/orderItemTile.js"
+            ],
+            "c/similarProducts": [
+                "similarProducts/similarProducts.js"
+            ],
+            "c/radioButtonComp": [
+                "radioButtonComp/radioButtonComp.js"
+            ],
+            "c/pubsub": [
+                "pubsub/pubsub.js"
+            ],
+            "c/dragCmp1": [
+                "dragCmp1/dragCmp1.js"
+            ],
+            "c/productTileList": [
+                "productTileList/productTileList.js"
+            ],
+            "c/parentLWC": [
+                "parentLWC/parentLWC.js"
+            ],
+            "c/dragCmp2": [
+                "dragCmp2/dragCmp2.js"
+            ],
+            "c/productTile": [
+                "productTile/productTile.js"
+            ],
+            "c/productListItem": [
+                "productListItem/productListItem.js"
+            ],
+            "c/productFilter": [
+                "productFilter/productFilter.js"
+            ]
+        }
+    },
+    "include": [
+        "**/*",
+        "../../../../.sfdx/typings/lwc/**/*.d.ts"
+    ],
+    "typeAcquisition": {
+        "include": [
+            "jest"
+        ]
+    }
+}

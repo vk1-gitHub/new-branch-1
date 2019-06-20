@@ -1,0 +1,3 @@
+<apex:page controller="GetAllContacts" sidebar="false" showHeader="false" contentType="application/json">
+{!contactsRecord}
+</apex:page>

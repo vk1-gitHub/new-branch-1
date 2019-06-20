@@ -1,0 +1,12 @@
+<template>
+        <lightning-card  title="">
+                <lightning-combobox
+                class="slds-col slds-p-around_medium"
+                name="Objects List"
+                label="Objects List"
+                value={selectedObjectName}
+                placeholder="---Select Object---"
+                options={objectsList}
+                onchange={handleChange} ></lightning-combobox>    
+        </lightning-card>
+</template>

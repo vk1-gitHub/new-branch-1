@@ -1,0 +1,51 @@
+<template>
+      <c-web-component1 onmyevent={getAccountId}></c-web-component1>
+            <template if:true={isRenderContacts}>
+                <lightning-card  title="Contacts Of Selected Account">
+                    <div class="slds-m-around_medium">
+                        <table class="slds-table slds-table_cell-buffer slds-table_bordered slds-table_col-bordered">
+                            <thead>
+                                <tr class="slds-line-height_reset">
+                                    <th class="" scope="col">
+                                        <div class="slds-truncate slds-text-align_center" title="FIRST NAME">FIRST NAME</div>
+                                    </th>
+                                    <th class="" scope="col">
+                                        <div class="slds-truncate slds-text-align_center" title="LAST NAME">LAST NAME</div>
+                                    </th>
+                                    <th class="" scope="col">
+                                        <div class="slds-truncate slds-text-align_center" title="AccountId">ACCOUNTID</div>
+                                    </th>
+                                    <th class="" scope="col">
+                                        <div class="slds-truncate slds-text-align_center" title="Email">EMAIL</div>
+                                    </th>
+                                    <th class="" scope="col">
+                                        <div class="slds-truncate slds-text-align_center" title="Stage">Phone</div>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <template for:each={conList.data} for:item="con">
+                                    <tr class="slds-hint-parent" key={con.Id}>
+                                        <td data-label="Account Name">
+                                            <div class="slds-truncate slds-text-align_center" title="FirstName"><a href="#"><lightning-formatted-text title={con} key={con.Id} value={con.FirstName} onclick={getContact}></lightning-formatted-text></a></div>
+                                        </td>
+                                        <td data-label="Prospecting">
+                                            <div class="slds-truncate slds-text-align_center" title="LastName">{con.LastName}</div>
+                                        </td>
+                                        <td data-label="Close Date">
+                                            <div class="slds-truncate slds-text-align_center" title="AccountId">{con.AccountId}</div>
+                                        </td>
+                                        <td data-label="Close Date">
+                                            <div class="slds-truncate slds-text-align_center" title="Email">{con.Email}</div>
+                                        </td>
+                                        <td data-label="Prospecting">
+                                            <div class="slds-truncate slds-text-align_center" title="Phone">{con.Phone}</div>
+                                        </td>
+                                    </tr> 
+                                </template> 
+                            </tbody>
+                        </table>
+                    </div>
+                </lightning-card>
+            </template>
+</template>

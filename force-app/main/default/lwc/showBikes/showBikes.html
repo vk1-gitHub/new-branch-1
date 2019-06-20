@@ -1,0 +1,31 @@
+<template>
+        <lightning-button variant="brand" label="Load Cycle" title="Brand action" onclick={handleClick} class="slds-m-left_x-small"></lightning-button>
+         <div class="slds-p-around_small">
+                 <div style="width:70%;float:left;">
+                        <lightning-card  title="" style="max-height : 400px;">
+                                <div class="slds-grid slds-gutters">
+                                <template for:each={cycleList.data} for:item="cycle">
+                                        <div key={cycle.Id} class="slds-col slds-col slds-size_1-of-4">
+                                                <lightning-card  title="">
+                                                        <img class={cls} title={cycle.Id} onclick={handleImageClick} src={cycle.url__c} style="width:300px;height:250px;"/>
+                                                        <h1 class="slds-text-align_center">{cycle.Name}</h1>
+                                                        <h1 class="slds-text-align_center"><b>Price :</b> {cycle.Selling_Price__c}</h1>
+                                                </lightning-card>
+                                        </div>
+                                </template>
+                                </div>
+                    </lightning-card>
+                 </div>
+                 <template if:true={showDetail}>
+                                <div style="width:30%; float:left;" class="slds-p-left_medium">
+                                                <lightning-card  title="" style="max-height : 400px;">
+                                                        <h1 class="slds-text-align_center">{selectedCycle.Name} Deatil : </h1>
+                                                        <img class="slds-text-align_center" title={selectedCycle.Id} onclick={handleImageClick} src={selectedCycle.url__c} style="width:300px;height:250px;"/>
+                                                        <h1 class="slds-text-align_center">{selectedCycle.Name}</h1>
+                                                        <h1 class="slds-text-align_center"><b>Model Number : </b>{selectedCycle.Model_Number__c}</h1>
+                                                        <h1 class="slds-text-align_center"><b>Price :</b> {selectedCycle.Price__c}</h1>
+                                                        <h1 class="slds-text-align_center" style="text-decoration: line-through;">{selectedCycle.Selling_Price__c} <b>{selectedCycle.Discount__c}% Off</b></h1>                       </lightning-card>
+                                </div>
+                 </template>
+         </div>
+</template>

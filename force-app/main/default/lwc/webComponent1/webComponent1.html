@@ -1,0 +1,39 @@
+<template>
+    <lightning-card  title="Fetch All Accounts">
+        <lightning-button variant="brand" label="Get Accounts" title="Base action" onclick={fetchAccounts} class="slds-m-left_x-small"></lightning-button>
+        <div class="slds-m-around_medium">
+            <template if:true={isRender}>
+                <table class="slds-table slds-table_cell-buffer slds-table_bordered slds-table_col-bordered">
+                    <thead>
+                        <tr class="slds-line-height_reset">
+                            <th class="" scope="col">
+                                <div class="slds-truncate slds-text-align_center" title="Account Name">Account Name</div>
+                            </th>
+                            <th class="" scope="col">
+                                <div class="slds-truncate slds-text-align_center" title="Type">Type</div>
+                            </th>
+                            <th class="" scope="col">
+                                <div class="slds-truncate slds-text-align_center" title="Stage">Phone</div>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <template for:each={accList.data} for:item="acc">
+                            <tr class="slds-hint-parent" key={acc.Id}>
+                                <td data-label="Account Name">
+                                    <div class="slds-truncate slds-text-align_center" title="Cloudhub"><a href="#"><lightning-formatted-text title={acc.Id} key={acc.Id} value={acc.Name} onclick={handleClick}></lightning-formatted-text></a></div>
+                                </td>
+                                <td data-label="Close Date">
+                                    <div class="slds-truncate slds-text-align_center" title="Type">{acc.Type}</div>
+                                </td>
+                                <td data-label="Prospecting">
+                                    <div class="slds-truncate slds-text-align_center" title="Phone">{acc.Phone}</div>
+                                </td>
+                            </tr> 
+                        </template> 
+                    </tbody>
+                </table>
+            </template>
+        </div>
+    </lightning-card>
+</template>

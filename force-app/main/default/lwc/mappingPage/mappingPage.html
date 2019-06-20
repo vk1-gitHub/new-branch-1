@@ -1,0 +1,152 @@
+<template>
+
+<div class="slds-grid slds-wrap slds-box slds-theme_shade">
+<div class="slds-col slds-size_6-of-12">
+    <span>
+         <div class="slds-media">
+                <div class="slds-media__figure">
+                        <lightning-icon icon-name="doctype:image" alternative-text="Doc image" ></lightning-icon>  
+                </div>
+                <div class="slds-media__body">
+                    <div class="slds-page-header__name">
+                    <div class="slds-page-header__name-title">
+                        <h1>
+                            <span class="slds-page-header__title slds-truncate" title="IMPORT PROCESS">IMPORT PROCESS</span>
+                        </h1>
+                    </div>
+                    </div>
+                        <p class="slds-page-header__name-meta">SOURCE MAPPING</p>
+                    </div>
+                </div>
+    </span>
+</div>
+<div class="slds-col slds-size_2-of-12">
+    <span>
+    <lightning-combobox
+            name="progress"
+            value={value}
+            placeholder="Select Progress"
+            options={options}
+            onchange={handleChange} >
+    </lightning-combobox>
+</span>
+</div>
+<div class="slds-col slds-size_1-of-12">
+    <span class="slds-p-left_medium">
+            <lightning-button  variant="brand" label="View Details" title="Brand action"></lightning-button>
+    </span>
+</div>
+<div class="slds-col slds-size_3-of-12">
+        <span><lightning-icon class="slds-float_left slds-p-left_large" icon-name="utility:collapse_all" size="small" alternative-text="collapse_all" ></lightning-icon></span>
+        <span><lightning-icon class="slds-float_left slds-p-left_small" icon-name="utility:expand_all" size="small" alternative-text="expand_all" ></lightning-icon></span>
+        <span><lightning-icon class="slds-float_left slds-p-left_small" icon-name="utility:add" size="small" alternative-text="add" ></lightning-icon></span>
+        <span><lightning-icon class="slds-float_left slds-p-left_small" icon-name="utility:copy" size="small" alternative-text="copy" ></lightning-icon></span>
+        <span><lightning-icon class="slds-float_left slds-p-left_small" icon-name="utility:task" size="small" alternative-text="task" ></lightning-icon></span>
+        <span><lightning-icon class="slds-float_left slds-p-left_small" icon-name="utility:home" size="small" alternative-text="home" ></lightning-icon></span>
+</div>
+</div>
+<div class="slds-p-top_medium"></div>
+<lightning-card class="slds-p-top_medium">
+        <div class="slds-grid slds-wrap">
+                <div class="slds-col slds-size_12-of-12">
+                  <span>
+                      <lightning-icon class="slds-float_left slds-p-top_medium slds-p-left_small" icon-name="utility:text_template" alternative-text="text_template" ></lightning-icon>
+                      <h1 class="slds-float_left slds-page-header__title slds-p-top_medium slds-p-left_small">Target Objects</h1>
+                  </span>
+                  <span style="float:left;">
+                        <lightning-combobox
+                                class="slds-p-left_medium"
+                                name="Objects"
+                                value={objValue}
+                                placeholder="Contact"
+                                options={options2}>
+                        </lightning-combobox>
+                  </span>
+                </div>
+        </div>
+        <div class="slds-p-around_medium">
+            <div class="slds-grid slds-wrap slds-box slds-theme_shade">
+                    <div class="slds-col slds-size_2-of-12">
+                            <lightning-icon class="slds-float_left slds-p-left_xxx-small" icon-name="utility:ban" size="small" alternative-text="utility ban" ></lightning-icon>
+                            <span class="slds-float_left slds-p-left_xxx-small slds-p-top_xx-small"><h1>Contact</h1></span>
+                    </div> 
+                    <div class="slds-col slds-size_10-of-12">
+                        <span class="slds-p-right_medium">
+                            <lightning-icon class="slds-float_right slds-p-left_small" icon-name="utility:close" size="small" alternative-text="utility close" ></lightning-icon>
+                            <lightning-button class="slds-float_right" variant="brand" label="Duplicate Matching Rule" title="Duplicate Matching Rule" icon-name="action:edit_groups"></lightning-button> 
+                        </span>
+                    </div>           
+            </div>
+
+            <div class="slds-grid slds-wrap slds-box">
+                    <div class="slds-col slds-size_2-of-12">
+                        <span><h1>BIG TABLE FIELDS</h1></span>
+                    </div>
+                    <div class="slds-col slds-size_2-of-12">
+                            <span><h1>FIELDS IN CONTACT</h1></span>
+                    </div>
+                    <div class="slds-col slds-size_2-of-12">
+                            <span>
+                                <lightning-helptext content="First HelpText"></lightning-helptext>
+                                <lightning-helptext content="Second HelpText"></lightning-helptext>
+                                <lightning-helptext content="Third HelpText"></lightning-helptext>
+                            </span>
+                    </div>
+                    <div class="slds-col slds-size_2-of-12">
+                            <span><h1>BIG TABLE FIELDS</h1></span>
+                    </div>
+                    <div class="slds-col slds-size_2-of-12">
+                            <span><h1>FIELDS IN CONTACT</h1></span>
+                    </div>
+                    <div class="slds-col slds-size_2-of-12">
+                            <span>
+                                    <lightning-helptext content="First HelpText"></lightning-helptext>
+                                    <lightning-helptext content="Second HelpText"></lightning-helptext>
+                                    <lightning-helptext content="Third HelpText"></lightning-helptext>
+                            </span>
+                     </div>
+            </div>
+
+
+
+            <div class="slds-grid slds-wrap slds-box">
+                    <div class="slds-col slds-size_2-of-12">
+                        <span><h1>{firstField}</h1></span>
+                    </div>
+                    <div class="slds-col slds-size_2-of-12">
+                            <span>
+                                <lightning-combobox
+                                    name="Fields"
+                                    value={objValue}
+                                    placeholder="None"
+                                    options={fieldsList}
+                                    onchange={getSelectedField}>
+                                </lightning-combobox>
+                            </span>
+                    </div>
+                    <div class="slds-col slds-size_2-of-12">
+                            <span>
+                                <lightning-input class="slds-float_left slds-p-left_x-small" type="checkbox" value="true"></lightning-input>
+                                <lightning-helptext class="slds-float_left" content="Third HelpText"></lightning-helptext>
+                                <lightning-icon class="slds-float_left slds-p-left_small" icon-name="utility:delete" size="small" alternative-text="utility delete" ></lightning-icon>
+                            </span>
+                    </div>
+                    <div class="slds-col slds-size_2-of-12">
+                            <span><h1>BIG TABLE FIELDS</h1></span>
+                    </div>
+                    <div class="slds-col slds-size_2-of-12">
+                            <span><h1>FIELDS IN CONTACT</h1></span>
+                    </div>
+                    <div class="slds-col slds-size_2-of-12">
+                            <span>
+                                <lightning-helptext content="First HelpText"></lightning-helptext>
+                                <lightning-helptext content="Second HelpText"></lightning-helptext>
+                                <lightning-helptext content="Third HelpText"></lightning-helptext>  
+                            </span>
+                     </div>
+            </div>
+
+        </div>
+</lightning-card>
+
+</template>

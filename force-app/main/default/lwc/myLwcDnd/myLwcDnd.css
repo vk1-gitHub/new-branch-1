@@ -1,0 +1,22 @@
+.container {
+    width: 90%;
+    height: 400px;
+    background: white;
+    margin: auto;
+    padding: 10px;
+    position: fixed;
+}
+.left {
+    width: 30%;
+    height: 400px;
+    background: #6295E1;
+    margin-right: 20%;
+    margin-left: 100px;
+    float: left;
+}
+.right {
+    width: 30%;
+    height: 400px;
+    background: aqua;
+    display: inline-block; 
+}
