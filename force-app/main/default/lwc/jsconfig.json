@@ -3,6 +3,7 @@
         "experimentalDecorators": true,
         "baseUrl": ".",
         "paths": {
+<<<<<<< HEAD
             "c/showBikes": [
                 "showBikes/showBikes.js"
             ],
@@ -14,10 +15,21 @@
             ],
             "c/testnevigate": [
                 "testnevigate/testnevigate.js"
+=======
+            "c/accountMap": [
+                "accountMap/accountMap.js"
+            ],
+            "c/bikeCard": [
+                "bikeCard/bikeCard.js"
+            ],
+            "c/childLWC": [
+                "childLWC/childLWC.js"
+>>>>>>> 2871810afe6ef23da396d75392cef5e824895f59
             ],
             "c/createRecordComp": [
                 "createRecordComp/createRecordComp.js"
             ],
+<<<<<<< HEAD
             "c/thirdLWC": [
                 "thirdLWC/thirdLWC.js"
             ],
@@ -50,16 +62,32 @@
             ],
             "c/ldsUtils": [
                 "ldsUtils/ldsUtils.js"
+=======
+            "c/data": [
+                "data/data.js"
+            ],
+            "c/dragCmp1": [
+                "dragCmp1/dragCmp1.js"
+            ],
+            "c/dragCmp2": [
+                "dragCmp2/dragCmp2.js"
+>>>>>>> 2871810afe6ef23da396d75392cef5e824895f59
             ],
             "c/firstComp": [
                 "firstComp/firstComp.js"
             ],
+<<<<<<< HEAD
             "c/webComponent2": [
                 "webComponent2/webComponent2.js"
+=======
+            "c/fisrtLWC": [
+                "fisrtLWC/fisrtLWC.js"
+>>>>>>> 2871810afe6ef23da396d75392cef5e824895f59
             ],
             "c/helloWorld": [
                 "helloWorld/helloWorld.js"
             ],
+<<<<<<< HEAD
             "c/myDndList": [
                 "myDndList/myDndList.js"
             ],
@@ -80,10 +108,21 @@
             ],
             "c/secondComp": [
                 "secondComp/secondComp.js"
+=======
+            "c/inlineMessage": [
+                "inlineMessage/inlineMessage.js"
+            ],
+            "c/ldsUtils": [
+                "ldsUtils/ldsUtils.js"
+            ],
+            "c/mappingPage": [
+                "mappingPage/mappingPage.js"
+>>>>>>> 2871810afe6ef23da396d75392cef5e824895f59
             ],
             "c/myComp1": [
                 "myComp1/myComp1.js"
             ],
+<<<<<<< HEAD
             "c/childLWC": [
                 "childLWC/childLWC.js"
             ],
@@ -95,16 +134,38 @@
             ],
             "c/tabLwcComp": [
                 "tabLwcComp/tabLwcComp.js"
+=======
+            "c/myComp2": [
+                "myComp2/myComp2.js"
+            ],
+            "c/myDndItem": [
+                "myDndItem/myDndItem.js"
+            ],
+            "c/myDndList": [
+                "myDndList/myDndList.js"
+            ],
+            "c/myLwcDnd": [
+                "myLwcDnd/myLwcDnd.js"
+>>>>>>> 2871810afe6ef23da396d75392cef5e824895f59
             ],
             "c/notesAndAttachmentList": [
                 "notesAndAttachmentList/notesAndAttachmentList.js"
             ],
+<<<<<<< HEAD
             "c/mappingPage": [
                 "mappingPage/mappingPage.js"
+=======
+            "c/objectListComp": [
+                "objectListComp/objectListComp.js"
+            ],
+            "c/orderBuilder": [
+                "orderBuilder/orderBuilder.js"
+>>>>>>> 2871810afe6ef23da396d75392cef5e824895f59
             ],
             "c/orderItemTile": [
                 "orderItemTile/orderItemTile.js"
             ],
+<<<<<<< HEAD
             "c/similarProducts": [
                 "similarProducts/similarProducts.js"
             ],
@@ -116,10 +177,33 @@
             ],
             "c/dragCmp1": [
                 "dragCmp1/dragCmp1.js"
+=======
+            "c/paginator": [
+                "paginator/paginator.js"
+            ],
+            "c/parentLWC": [
+                "parentLWC/parentLWC.js"
+            ],
+            "c/placeholder": [
+                "placeholder/placeholder.js"
+            ],
+            "c/productCard": [
+                "productCard/productCard.js"
+            ],
+            "c/productFilter": [
+                "productFilter/productFilter.js"
+            ],
+            "c/productListItem": [
+                "productListItem/productListItem.js"
+            ],
+            "c/productTile": [
+                "productTile/productTile.js"
+>>>>>>> 2871810afe6ef23da396d75392cef5e824895f59
             ],
             "c/productTileList": [
                 "productTileList/productTileList.js"
             ],
+<<<<<<< HEAD
             "c/parentLWC": [
                 "parentLWC/parentLWC.js"
             ],
@@ -134,6 +218,49 @@
             ],
             "c/productFilter": [
                 "productFilter/productFilter.js"
+=======
+            "c/pubsub": [
+                "pubsub/pubsub.js"
+            ],
+            "c/radioButtonComp": [
+                "radioButtonComp/radioButtonComp.js"
+            ],
+            "c/searchComponent": [
+                "searchComponent/searchComponent.js"
+            ],
+            "c/secondComp": [
+                "secondComp/secondComp.js"
+            ],
+            "c/secondLWC": [
+                "secondLWC/secondLWC.js"
+            ],
+            "c/showBikes": [
+                "showBikes/showBikes.js"
+            ],
+            "c/similarProducts": [
+                "similarProducts/similarProducts.js"
+            ],
+            "c/tabLwcComp": [
+                "tabLwcComp/tabLwcComp.js"
+            ],
+            "c/testLwc": [
+                "testLwc/testLwc.js"
+            ],
+            "c/testnevigate": [
+                "testnevigate/testnevigate.js"
+            ],
+            "c/thirdLWC": [
+                "thirdLWC/thirdLWC.js"
+            ],
+            "c/webComponent1": [
+                "webComponent1/webComponent1.js"
+            ],
+            "c/webComponent2": [
+                "webComponent2/webComponent2.js"
+            ],
+            "c/webComponent3": [
+                "webComponent3/webComponent3.js"
+>>>>>>> 2871810afe6ef23da396d75392cef5e824895f59
             ]
         }
     },
