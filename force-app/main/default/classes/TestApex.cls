@@ -1,6 +1,6 @@
 public with sharing class TestApex {
     public TestApex() {
-      System.debug("Changed Again");
-      System.debug("New Debug Added");
+      System.debug("A");
+      System.debug("B");
     }
 }
