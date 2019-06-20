@@ -1,5 +1,5 @@
 public with sharing class TestApex {
     public TestApex() {
-      String name = 'Test2';
+      List<Contact> conList = [SELECT Id, lastName FROM Contact LIMIT 100];
     }
 }
