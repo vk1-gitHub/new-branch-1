@@ -1,0 +1,7 @@
+<aura:component >
+    <aura:registerEvent name="compEvent" type="c:PhaseTestEvent"/>
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    <!--<aura:handler name="compEvent" event="c:PhaseTestEvent" action="{!c.handleCompEvent}"/>-->
+    <aura:handler name="compEvent" event="c:PhaseTestEvent" action="{!c.handleCompEvent}" phase="capture"/>
+    <h1>Source Component</h1>
+</aura:component>

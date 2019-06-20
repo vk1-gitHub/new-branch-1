@@ -1,0 +1,20 @@
+<apex:page >
+    <apex:includeLightning />
+    
+    <div style="width:30%;height:100px;" id="FlipcardContainer" />
+    
+    <script>
+    $Lightning.use("c:TestLightningOut", function() {
+        $Lightning.createComponent("c:tabComponent",
+                                   { 
+                                       borderColor : "#16325c", 
+                                       bgColor : "#16325c" ,
+                                       fontColor : "#FFF",
+                                   },
+                                   "FlipcardContainer",
+                                   function(cmp) {
+                                       console.log('Component created, do something cool here');
+                                   });
+    });
+    </script>
+</apex:page>

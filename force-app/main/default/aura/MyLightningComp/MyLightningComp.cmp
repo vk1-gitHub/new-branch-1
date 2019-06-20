@@ -1,0 +1,3 @@
+<aura:component implements="force:hasRecordId,lightning:isUrlAddressable">
+  <h1>Hi, This is Lightning Component </h1>
+</aura:component>

@@ -1,0 +1,18 @@
+<template>
+        <c-web-component1 onmyevent={getAccountId}></c-web-component1>
+        <template if:true={isRenderForm}>
+                <lightning-record-form
+                record-id={recordId}
+                object-api-name="Account"
+                columns="2"
+                layout-type="Compact"
+                onsubmit={handleSubmit}>
+            </lightning-record-form>
+        <!--<lightning-record-form
+            record-id={recordId}
+            object-api-name="Account"
+            layout-type="Compact"
+            mode="view">
+        </lightning-record-form>  -->  
+    </template>
+</template>

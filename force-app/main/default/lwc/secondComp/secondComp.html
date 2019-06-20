@@ -1,0 +1,14 @@
+<template>
+      <p>Message Value in Parent Component : {myMessage}</p>
+      <lightning-button variant="success" label="Update In Child" title="Base action" onclick={handleUpdate} class="slds-m-left_x-small"></lightning-button>
+        <c-first-comp message-value={myMessage}></c-first-comp>
+    <!--<lightning-card  title="Hello">
+        <lightning-button label="New" slot="actions"></lightning-button>
+        <p>My Message In Parent : {myMessage}</p>
+        <p class="slds-p-horizontal_small">Communicating with child component through event: </p>
+        <p class="slds-p-horizontal_small"><span>Message From Child Component : </span><b>{message}</b></p>
+        <lightning-button variant="success" label="Update In Child" title="Base action" onclick={handleUpdate} class="slds-m-left_x-small"></lightning-button>
+        <p slot="footer">Card Footer</p>
+    </lightning-card>
+    <c-first-comp onlwcevent={handleEvent} mgs1={myMessage}></c-first-comp>-->
+</template>

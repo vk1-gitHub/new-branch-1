@@ -1,0 +1,5 @@
+<aura:component>
+    <aura:attribute name="getMessage" type="String"/>
+    <c:fisrtLWC onmgsevent="{!c.getMessage}"></c:fisrtLWC>
+    <c:secondLWC message="{!v.getMessage}" aura:id="secondLwcComp"></c:secondLWC>
+</aura:component>

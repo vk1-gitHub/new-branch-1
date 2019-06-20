@@ -1,0 +1,48 @@
+<template>
+    <style>
+        h1{ color : green;}
+        .slds-scope{height: 100%;}
+    </style>
+<!--<lightning-card  title="Wrapper Class Testing In Lightning Web Components" icon-name="custom:custom63">-->
+    <h1 >Hi, This is Lightning Web Component</h1>
+    <p>Hello</p>
+    <b class="test">Block</b>
+    <lightning-button variant="success" label="Click Me" title="Base action" onclick={handleClick} class="slds-m-left_x-small"></lightning-button>
+    <!--<div class="slds-p-around_medium">-->
+            <template if:true={boolVar}>
+                    <br/><h1>Data From JSON Record</h1><br/>
+                    <b>Account Id : </b> {myData.acc.Id}<br/>
+                    <b>Account Name :</b> {myData.acc.Name}<br/>
+                    <b>Account Phone :</b> {myData.acc.Phone}<br/>
+                    <b>Contact Id : </b> {myData.con.Id}<br/>
+                    <b>Contact Name : </b> {myData.con.LastName}<br/>
+                    <b>Contact Phone : </b> {myData.con.Phone}
+            </template>
+   <!-- </div>-->
+    
+    <!--<div class="slds-p-around_medium">-->
+            <template if:true={wrapRecord.data}>
+                    <br/><h1>Data From WrapperList</h1><br/>
+                        <template for:each={wrapRecord.data} for:item="wrap">
+                                    <p key={wrap.acc.Id}><b>Account Name : </b>{wrap.acc.Name}</p>
+                                    <p key={wrap.acc.Id}><b>Account Type : </b>{wrap.acc.Type}</p>
+                                    <p key={wrap.acc.Id}><b>Account Phone : </b>{wrap.acc.Phone}</p>
+                                    <p key={wrap.con.Id}><b>Conatct LastName : </b>{wrap.con.LastName}</p>
+                                    <p key={wrap.con.Id}><b>Conatct Phone : </b>{wrap.con.Phone}</p>
+                        </template>
+                    </template>
+    <!--</div>-->
+    
+
+    <!--<div class="slds-p-around_medium"> -->
+    <template if:true={getWrapData3.data}>
+        <h1>Data From Wrapper Single Record</h1><br/>
+         <p>{getWrapData3.data.acc.Name}</p>
+         <p>{getWrapData3.data.acc.Type}</p>
+         <p>{getWrapData3.data.acc.Phone}</p>
+         <p>{getWrapData3.data.con.LastName}</p>
+         <p>{getWrapData3.data.con.Phone}</p>
+        </template>
+   <!-- </div>-->
+<!--</lightning-card>-->
+</template>

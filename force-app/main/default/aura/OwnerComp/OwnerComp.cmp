@@ -1,0 +1,6 @@
+<aura:component >
+    <!--<aura:handler name="compEvent" event="c:PhaseTestEvent" action="{!c.handleCompEvent}"/>-->
+	<aura:handler name="compEvent" event="c:PhaseTestEvent" action="{!c.handleCompEvent}" phase="capture"/>
+    <c:ContainerComp/>
+    <h1>Owner Component</h1>
+</aura:component>

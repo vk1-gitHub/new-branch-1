@@ -1,0 +1,11 @@
+<template>
+    <div class="div2" id="div1" ondrop={drop1} ondragover={allowDrop}>
+        <template for:each={firstList} for:item='item'>
+           <p key={item.Id}>
+                <lightning-input key={item.Id} type="text" value={item.value} label={item.value} draggable="true" ondragstart={drag}></lightning-input>
+            </p>
+               <!--<lightning-formatted-text key={item.Id} value={item.value} draggable="true" ondragstart={drag}></lightning-formatted-text>-->
+        </template>
+    </div>
+    
+</template>

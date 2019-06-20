@@ -1,0 +1,7 @@
+<aura:component>
+    <aura:attribute name="mgsFromLwc" type="String"/>
+    <!--<c:webComponent1/>
+    <c:webComponent1 onmyEvent="{!c.handleEvent}"/>
+    <c:webComponent2/>-->
+    <c:webComponent3/>
+</aura:component>
